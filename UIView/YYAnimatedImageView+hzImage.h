@@ -35,6 +35,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setHzImageUrl:(NSString *)hzImageUrl placeholder:(UIImage *)placeholderImage completion:(YYWebImageCompletionBlock)completion;
 
+/**
+  设置网络图片URL ， 设置targetSize 以压缩大图片
+
+ @return return value description
+ */
+- (void)setHzImageUrl:(NSString *)hzImageUrl
+           targetSize:(CGSize)targetSize
+          placeholder:(UIImage *)placeholderImage
+           completion:(YYWebImageCompletionBlock)completion;
+
 @end
 
 NS_ASSUME_NONNULL_END
